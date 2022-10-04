@@ -1,0 +1,62 @@
+<html> 
+<head><title>Arquitetura cliente-servidor</title></head>
+<body> 
+    <h1>Arquitetura cliente-servidor</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Cliente-Servidor.png"/>
+<h2>Índice</h2>
+<ol>
+    <li><a href =#Conceito>Conceito</a> </li>
+    <li> <a href =#cliente>O que é cliente?</a> </li>
+    <li>  <a href =#servidor>O que é servidor?</a> </li>
+    <li>  <a href =#Modelo>Modelo Cliente-Servidor</a> </li>
+    <li> <a href =#Vantagens>Vantagens </a></li>
+    <li> <a href =#Referências>Referências </a> </li>
+</ol>
+
+<h2 id="Conceito">Conceito</h2>
+<p> A expressão de cliente-servidor é utilizada no âmbito da informática. Nesse contexto, chama-se cliente ao dispositivo que exige determinados serviços a um servidor. A ideia de servidor, entretanto, refere-se ao equipamento que presta serviços aos computadores conectados a ele através de uma rede.</p>
+<p> O conceito de cliente-servidor, refere-se, portanto, a um modelo de comunicação que vincula vários dispositivos informáticos através de uma rede. O cliente, nesse contexto, faz solicitações de serviços ao servidor, responsável por atender a esses requisitos.</p>
+<p> Com essa arquitetura, as tarefas são distribuídas entre os servidores (que fornecem os serviços) e os clientes (que exigem esses serviços). Por outras palavras: o cliente solicita ao servidor um recurso, que fornece uma resposta.</p>
+
+<h2 id="cliente"> O que é cliente?</h2>
+<p> No desenvolvimento da web, "lado do cliente" refere-se a tudo em um aplicativo web que é exibido ou ocorre no cliente (dispositivo do usuário final). Isso inclui o que o usuário vê, como texto, imagens e o resto da IU, junto com quaisquer ações que um aplicativo execute no navegador do usuário.</p>
+<p>Linguagens de marcação como HTML e CSS são interpretadas pelo navegador no lado do cliente. Além disso, muitos desenvolvedores contemporâneos estão incluindo processos do lado do cliente em sua arquitetura de aplicativos e deixando de fazer tudo no lado do servidor; a lógica de negócios para páginas web dinâmicas*, por exemplo, geralmente é executada no lado do cliente em um aplicativo web moderno. Os processos do lado do cliente quase sempre são escritos em JavaScript.</p>
+<p>No exemplo da netflix.com acima, o HTML, CSS e JavaScript que ditam como a página principal da Netflix aparece para o usuário são interpretados pelo navegador no lado do cliente. A página também pode responder a "eventos": por exemplo, se o mouse do usuário passar sobre uma das imagens em miniatura do filme, a imagem se expande e as miniaturas adjacentes se movem ligeiramente para um lado para abrir espaço para a imagem maior. Este é um exemplo de processo do lado do cliente; o código dentro da própria página web responde ao mouse do usuário e inicia essa ação sem se comunicar com o servidor.</p>
+<p> O lado do cliente também é conhecido como front-end, embora esses dois termos não signifiquem exatamente a mesma coisa. O lado do cliente se refere apenas ao local onde os processos são executados, enquanto o front-end se refere aos tipos de processos que são executados no lado do cliente.</p>
+
+<h2 id="servidor"> O que é servidor?</h2>
+<p> Muito parecido com o lado do cliente, o "lado do servidor" significa tudo o que acontece no servidor, em vez de no cliente.</p>
+<p>  São um conjunto de programas que serve para atender demandas de outros programas, os clientes. Exemplos de servidores incluem servidores da web, servidores de e-mail e servidores de arquivos, servidores de banco de dados, entre outros. </p>
+
+<h2 id="Modelo">Modelo Cliente-Servidor</h2>
+<p> Então, se analisarmos o modelo cliente/servidor em detalhes, notaremos que há dois processos envolvidos, uma máquina cliente e uma máquina servidora. </p>
+<p> A comunicação se inicia com o processo cliente enviando uma mensagem pela rede ao processo servidor. Após isso, o processo cliente espera por uma mensagem em resposta. Quando o processo servidor recebe a solicitação, ele executa o trabalho solicitado e envia de volta uma resposta. </p>
+<p> Quando um cliente solicita uma conexão a um servidor, o servidor pode aceitar ou rejeitar a conexão. Se a conexão for aceita, o servidor estabelece e mantém uma conexão com o cliente em um protocolo específico. </p>
+<p> Por exemplo, um cliente de e-mail pode solicitar uma conexão SMTP a um servidor de e-mail para enviar uma mensagem. O aplicativo SMTP no servidor de e-mail solicitará a autenticação do cliente, como endereço de email e a senha. Se essas credenciais corresponderem a uma conta no servidor de email, o servidor enviará o email ao destinatário pretendido. </p>
+
+<h2 id="Vantagens"> Vantagens </h2>
+<ul> 
+<h3> <li> Escalabilidade </li> </h3>
+<p> Um sistema cliente/servidor pode ser expandido verticalmente pela adição de mais recursos à máquina servidora ou aumento do número de servidores - ou horizontalmente, pelo aumento do número de máquinas servidoras.</p>
+<h3> <li> Independência de plataformas </li> </h3>
+<p> Os sistemas cliente/servidor não ficam presos a um ambiente de software ou hardware.</p>
+<h3> <li> Melhor Performance </li> </h3>
+<p>Com a força de processamento distribuída, o tempo de processamento é menor, consequentemente o tempo de resposta também é menor.</p>
+<h3> <li> Fácil Acesso aos Dados </li> </h3>
+<p>Como é o processo cliente que gerencia a interface, deixando o servidor livre para manipular os dados, este por sua vez fica mais disponível.</p>
+<h3> <li> Redução de Custos Operacionais </li> </h3>
+<p>Como os custos de hardware e software estão constantemente sendo reduzidos, a troca dos sistemas grandes por sistemas com redes integradas pode ser feita com um baixo custo.</p>
+</ul>
+
+<h2 id="Referências">  Referências </h2>
+<ul>
+    <li>  <a  href="https://conceito.de/cliente-servidor"  target="_blank" > https://conceito.de/cliente-servidor </a>  </li>
+    <li>  <a  href="http://penta2.ufrgs.br/redes296/cliente_ser/tutoria_.htm"   target="_blank" > http://penta2.ufrgs.br/redes296/cliente_ser/tutoria_.htm</a>     </li>
+    <li>   <a  href="https://www.cloudflare.com/pt-br/learning/serverless/glossary/client-side-vs-server-side/"  target="_blank" > https://www.cloudflare.com/pt-br/learning/serverless/glossary/client-side-vs-server-side/</a>  </li>
+    <li>   <a  href="https://www.ultra64.com.br/o-que-sao-e-quais-as-diferencas-entre-cliente-e-servidor/"  target="_blank" > https://www.ultra64.com.br/o-que-sao-e-quais-as-diferencas-entre-cliente-e-servidor/ </a>  </li>
+
+</ul>
+
+
+</body>
+</html>
